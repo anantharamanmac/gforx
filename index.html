@@ -33,7 +33,37 @@
 <body>
 <div class="loader-wrapper">
 <div id="large-header" class="large-header">
-<h1 class="loader-title"><span>Gforx</span> Studio</h1>
+	
+<h1 class="loader-title"><span>Gforx</span>Studio</h1>
+<style>
+
+
+	.loader {
+		border: 4px solid #f3f3f3;
+		border-top: 4px solid #3498db;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		animation: spin 1s linear infinite;
+		margin-left: 20%;
+	}
+
+	@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+
+	.loading-text {
+		opacity: 0;
+		animation: fadeIn 1s forwards 1s; /* Delays the animation for 1 second */
+	}
+
+	
+</style>
+<div class="loader-container">
+	<div class="loader"></div>
+	<p class="loading-text">Loading...</p>
+</div>
 </div>
 </div>
 

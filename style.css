@@ -19,7 +19,9 @@
 body {
     font-size: 16px;
     font-weight: 400;
+    text-align: center;
     line-height: 28px
+    
 }
 
 body,p,input,textarea,.mailchimp-form p input,input[type=submit],input[type=button],.about-details p,.breadcrumb h2 span,.dt-sc-service-content p,.shop-dropdown ul li span,.shop-dropdown span span,.project-details ul.client-details li span,.project-details ul.client-details li p {
