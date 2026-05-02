@@ -1,467 +1,335 @@
-
-<!Doctype html>
-<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gforx studio</title>
-<meta name="description" content>
-<meta name="author" content>
-<meta name="google-adsense-account" content="ca-pub-1117993392594051">	
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1117993392594051"
-     crossorigin="anonymous"></script>
-<!--[if lt IE 9]>
-	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gforx Studio | Creative Production House</title>
+    <meta name="description" content="Gforx Studio - A Creative Production House specializing in Photography, Design, and Web Development.">
+    
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 
-<link id="default-css" rel="stylesheet" href="style.css" type="text/css" media="all" />
-
-<link href="css/animations.css" rel="stylesheet" type="text/css" media="all" />
-<link id="shortcodes-css" href="css/shortcodes.css" rel="stylesheet" type="text/css" media="all" />
-<link id="skin-css" href="skins/red/style.css" rel="stylesheet" media="all" />
-<link href="css/isotope.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-<link href="css/pace.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
-<link id="light-dark-css" href="dark/dark.css" rel="stylesheet" media="all" />
-
-<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-
-<script src="js/modernizr.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/modern-theme.css">
 </head>
 <body>
-<div class="loader-wrapper">
-<div id="large-header" class="large-header">
-	
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1117993392594051"
-     crossorigin="anonymous"></script>
-<style>
 
-body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 100vh;
-            margin: 0;
-			text-align: center;
-        }
-		.loader-container{
-			align-items: center;
-			text-align: center;
-		}
-	.loader {
-		border: 4px solid #f3f3f3;
-		border-top: 4px solid rgb(253, 3, 3);
-		border-radius: 50%;
-		width: 40px;
-		height: 40px;
-		animation: spin 1s linear infinite;
-		
-	}
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo gradient-text">
+                <img src="images/logo.png" alt="Gforx Studio" style="max-height: 40px; display: inline-block; vertical-align: middle;">
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i data-feather="menu"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">What We Do</a></li>
+                <li><a href="#work">Our Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	@keyframes spin {
-		0% { transform: rotate(0deg); }
-		100% { transform: rotate(360deg); }
-	}
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to <br><span class="gradient-text">Gforx Studio</span></h1>
+                <p>A premier creative production house blending artistic flair with technical proficiency. From stunning photography and visual storytelling to innovative web development, we bring your ideas to life.</p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn btn-primary">Explore Our Works</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	.loading-text {
-		opacity: 1;
-		animation: fadeIn 1s forwards 1s; /* Delays the animation for 1 second */
-	}
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">What We Can Do</h2>
+            <p class="section-subtitle">At the intersection of creativity and technology, our expertise lies in providing comprehensive production services.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://www.intelligenthq.com/wp-content/uploads/2020/11/AI.jpg" alt="Editing" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3>Editing & Post-Production</h3>
+                    <p>Professional video and photo editing services to ensure your visual content is polished, engaging, and ready for any platform.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://assets-global.website-files.com/61406347b8db463e379e2732/616f2568930a2ea589a71598_Smart-Guides-01.gif" alt="Graphic Designing" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3>Graphic Designing</h3>
+                    <p>Crafting visually captivating designs that tell compelling stories. From brand identities to digital assets, we make you stand out.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://learn.microsoft.com/en-us/power-pages/configure/media/visual-studio-code-editor/vscode-file-explorer.png" alt="Web Development" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3>Web Development</h3>
+                    <p>Developing seamless, innovative, and robust websites that provide a unique blend of technical proficiency and smooth user experiences.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://assets.designhill.com/design-blog/wp-content/uploads/2015/02/Gig-Poster-design-Step-39.jpg" alt="Poster Creation" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3>Poster Creation</h3>
+                    <p>Designing eye-catching posters for events, marketing, and promotions that grab attention and convey your message effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	
-</style>
-<div class="loader-container">
-	<div class="loader"></div>
-	
-        <p class="loading-text">Loading...</p>
-	
-</div>
-</div>
-</div>
+    <!-- Portfolio Section -->
+    <section id="work">
+        <div class="container">
+            <h2 class="section-title">Our Works</h2>
+            <p class="section-subtitle">Explore a gallery of projects that prioritize user experience and design innovation.</p>
+            
+            <div class="portfolio-filters" id="portfolioFilters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="people">People</button>
+                <button class="filter-btn" data-filter="street">Street</button>
+                <button class="filter-btn" data-filter="still-life">Still Life</button>
+            </div>
 
-<div class="wrapper">
-<div class="inner-wrapper">
-<div id="header-wrapper" class="dt-sticky-menu"> 
-<div id="header" class="header">
-<div class="container menu-container">
-<a class="logo" href="index.html"><img alt="Logo" src="images/logo.png"></a>
-<a href="#" class="menu-trigger">
-<span></span>
-</a>
-</div>
-</div>
-<nav id="main-menu">
-<div id="dt-menu-toggle" class="dt-menu-toggle">
-Menu
-<span class="dt-menu-toggle-icon"></span>
-</div>
-<ul class="menu type1">
-<li class="current_page_item menu-item-simple-parent"><a href="index.html">Home <span class="fa fa-home"></span></a>
-<!-- 	
-<ul class="sub-menu">
-<li class="current_page_item"><a href="http://www.wedesignthemes.com/html/redart/default">Default</a></li>
-<li><a href="http://www.wedesignthemes.com/html/redart/menu-overlay">Menu Overlay</a></li>
-<li><a href="http://www.wedesignthemes.com/html/redart/slide-bar">Slide Bar</a></li>
-<li><a href="http://www.wedesignthemes.com/html/redart/slider-over-menu">Slider Over Menu</a></li>
-</ul> -->
-<!-- <a class="dt-menu-expand">+</a>
-</li>
-<li class="menu-item-simple-parent">
-<a href="about.html">About us <span class="fa fa-user-secret"></span></a>
-</li>
-<li class="menu-item-simple-parent"><a href="gallery.html">Gallery <span class="fa fa-camera-retro"></span></a>
-<ul class="sub-menu">
-<li><a href="gallery-detail.html">Gallery detail</a></li>
-<li><a href="gallery-detail-with-lhs.html">Gallery-detail-left-sidebar</a></li>
-<li><a href="gallery-detail-with-rhs.html">Gallery-detail-right-sidebar</a></li>
-</ul>
-<a class="dt-menu-expand">+</a>
-</li>
-<li class="menu-item-simple-parent"><a href="shop.html">Shop <span class="fa fa-cart-plus"></span></a>
-<ul class="sub-menu">
-<li><a href="shop-detail.html">Shop Detail</a></li>
-<li><a href="shop-cart.html">Cart Page</a></li>
-<li><a href="shop-checkout.html">Checkout Page</a></li>
-</ul>
-<a class="dt-menu-expand">+</a>
-</li>
-<li class="menu-item-simple-parent"><a href="blog.html">Blog <span class="fa fa-pencil-square-o"></span></a>
-<ul class="sub-menu">
-<li><a href="blog-detail.html">Blog detail</a></li>
-<li><a href="blog-detail-with-lhs.html">Blog-detail-left-sidebar</a></li>
-<li><a href="blog-detail-with-rhs.html">Blog-detail-right-sidebar</a></li>
-</ul>
-<a class="dt-menu-expand">+</a>
-</li>
-<li class="menu-item-simple-parent">
-<a href="contact.html">contact<span class="fa fa-map-marker"></span></a>
-</li>
-<li class="menu-item-simple-parent">
-<a href="progressbar.html">shortcodes <span class="fa fa-paint-brush"></span></a>
-<ul class="sub-menu">
-<li><a href="progressbar.html"> Progress-bar </a></li>
-<li><a href="buttons.html"> Buttons Page </a></li>
-<li><a href="tabs.html"> tabs-accordions </a></li>
-<li><a href="typography.html"> typography </a></li>
-<li><a href="columns.html"> columns </a></li>
-</ul> -->
-<a class="dt-menu-expand">+</a>
-</li>
-</ul> 
-</nav> 
-</div>
-<div class="slider-container">
-<div class="slider fullwidth-section parallax"></div>
-</div>
-<div id="main">
-<section id="primary" class="content-full-width"> 
-<div class="dt-sc-hr-invisible-small"></div>
-<div class="fullwidth-section"> 
-<div class="container">
-<div class="main-title animate" data-animation="pullDown" data-delay="100">
-<h2 class="aligncenter"> Our Works </h2>
-<p> Explore a gallery of projects that prioritize user experience and design innovation. </p>
-</div>
-</div>
-<div class="dt-sc-sorting-container">
-<a data-filter="*" href="#" title="09" class="dt-sc-tooltip-top active-sort type1 dt-sc-button animate" data-animation="fadeIn" data-delay="100">All</a>
-<a data-filter=".nature" href="#" title="06" class="dt-sc-tooltip-top type1 dt-sc-button animate" data-animation="fadeIn" data-delay="200">Nature</a>
-<a data-filter=".people" href="#" title="06" class="dt-sc-tooltip-top type1 dt-sc-button animate" data-animation="fadeIn" data-delay="300">People</a>
-<a data-filter=".street" href="#" title="05" class="dt-sc-tooltip-top type1 dt-sc-button animate" data-animation="fadeIn" data-delay="400">Street</a>
-<a data-filter=".still-life" href="#" title="08" class="dt-sc-tooltip-top type1 dt-sc-button animate" data-animation="fadeIn" data-delay="500">Still life</a>
-</div>
-<div class="portfolio-fullwidth">
-<div class="portfolio-grid">
-<div class="dt-sc-portfolio-container isotope"> 
-<div class="portfolio nature still-life dt-sc-one-fourth">
-<figure>
-<img src="images/portfolio-images/img-1.jpg" alt title>
-<figcaption>
-<div class="portfolio-detail">
-<div class="views">
-<a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]" href="images/portfolio-images/img-1.jpg"></a><span>3</span>
-</div>
-<div class="portfolio-title">
-<h5><a href="gallery-detail.html">Proposing Love</a></h5>
-<p>Sample text here looks good.</p>
-</div>
-</div>
-</figcaption>
-</figure>
-</div>
-<div class="portfolio nature people street dt-sc-one-fourth">
-<figure>
-<img src="images/portfolio-images/img-2.jpg" alt title>
-<figcaption>
-<div class="portfolio-detail">
-<div class="views">
-<a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]" href="images/portfolio-images/img-2.jpg"></a><span>7</span>
-</div>
-<div class="portfolio-title">
-<h5><a href="gallery-detail-with-lhs.html">Brave Man</a></h5>
-<p>A cowboy is a man with guts</p>
-</div>
-</div>
-</figcaption>
-</figure>
-</div>
-<div class="portfolio street landscapes still-life dt-sc-one-fourth">
-<figure>
-<img src="images/portfolio-images/img-3.jpg" alt title>
-<figcaption>
-<div class="portfolio-detail">
-<div class="views">
-<a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]" href="images/portfolio-images/img-3.jpg"></a><span>9</span>
-</div>
-<div class="portfolio-title">
-<h5><a href="gallery-detail-with-rhs.html">Mountain Ride</a></h5>
-<p>the swagger of a cowboy</p>
-</div>
-</div>
-</figcaption>
-</figure>
-</div>
-<div class="portfolio nature still-life dt-sc-one-fourth">
-<figure>
-<img src="images/portfolio-images/img-4.jpg" alt title>
-<figcaption>
-<div class="portfolio-detail">
-<div class="views">
-<a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]" href="images/portfolio-images/img-4.jpg"></a><span>5</span>
-</div>
-<div class="portfolio-title">
-<h5><a href="gallery-detail.html">River Ride</a></h5>
-<p>Live Free, Ride Hard!!</p>
-</div>
-</div>
-</figcaption>
-</figure>
-</div>
-<div class="portfolio people still-life dt-sc-one-fourth">
-<figure>
-<img src="images/portfolio-images/img-5.jpg" alt title>
-<figcaption>
-<div class="portfolio-detail">
-<div class="views">
-<a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]" href="images/portfolio-images/img-5.jpg"></a><span>6</span>
-</div>
-<div class="portfolio-title">
-<h5><a href="gallery-detail-with-lhs.html">Ride Hard</a></h5>
-<p>Saddle your horse</p>
-</div>
-</div>
-</figcaption>
-</figure>
-</div>
-<div class="portfolio people still-life dt-sc-one-fourth">
-<figure>
-<img src="images/portfolio-images/img-6.jpg" alt title>
-<figcaption>
-<div class="portfolio-detail">
-<div class="views">
-<a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]" href="images/portfolio-images/img-6.jpg"></a><span>1</span>
-</div>
-<div class="portfolio-title">
-<h5><a href="gallery-detail-with-rhs.html">Black Rider</a></h5>
-<p>No reason to ride a horse</p>
-</div>
-</div>
-</figcaption>
-</figure>
-</div>
-<div class="portfolio people nature still-life street dt-sc-one-fourth">
-<figure>
-<img src="images/portfolio-images/img-7.jpg" alt title>
-<figcaption>
-<div class="portfolio-detail">
-<div class="views">
-<a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]" href="images/portfolio-images/img-7.jpg"></a><span>5</span>
-</div>
-<div class="portfolio-title">
-<h5><a href="gallery-detail.html">Stay single</a></h5>
-<p>Make Way</p>
-</div>
-</div>
-</figcaption>
-</figure>
-</div>
-<div class="portfolio nature people street still-life dt-sc-one-fourth">
-<figure>
-<img src="images/portfolio-images/img-8.jpg" alt title>
-<figcaption>
-<div class="portfolio-detail">
-<div class="views">
-<a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]" href="images/portfolio-images/img-8.jpg"></a><span>12</span>
-</div>
-<div class="portfolio-title">
-<h5><a href="gallery-detail-with-lhs.html">Born to Ride</a></h5>
-<p>Cowboys are born, ain't made!</p>
-</div>
-</div>
-</figcaption>
-</figure>
-</div>
-<div class="portfolio street nature people still-life dt-sc-one-fourth">
-<figure>
-<img src="images/portfolio-images/img-9.jpg" alt title>
-<figcaption>
-<div class="portfolio-detail">
-<div class="views">
-<a class="fa fa-camera-retro" data-gal="prettyPhoto[gallery]" href="images/portfolio-images/img-9.jpg"></a><span>15</span>
-</div>
-<div class="portfolio-title">
-<h5><a href="gallery-detail-with-rhs.html">Stand Tall</a></h5>
-<p>Hard to Settle!!</p>
-</div>
-</div>
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="clear"></div>
-<div class="container">
-<div class="main-title animate" data-animation="pullDown" data-delay="100">
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="nature still-life">
+                    <img src="images/portfolio-images/img-1.jpg" alt="Proposing Love">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h4>Proposing Love</h4>
+                            <p>Nature, Still Life</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="nature people street">
+                    <img src="images/portfolio-images/img-2.jpg" alt="Brave Man">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h4>Brave Man</h4>
+                            <p>People, Street</p>
+                        </div>
+                    </div>
+                </div>
 
-<div class="fullwidth-section">
-<div class="container">
-<div class="main-title animate" data-animation="pullDown" data-delay="100">
-<h2 class="aligncenter"> what we can do  </h2>
-<p>  </p>
-</div>
-</div>
-<div class="frame-grid">
-<div class="frame-thumb">
-<div class="frame-fullwidth">
-<div class="dt-sc-frame-container isotope"> 
-<div class="frame ceramic dt-sc-one-third">
-<figure>
-<img src="https://assets.designhill.com/design-blog/wp-content/uploads/2015/02/Gig-Poster-design-Step-39.jpg" alt title>
-</figure>
-</div>
-<div class="frame plastic dt-sc-one-third">
-<figure>
-<img src="https://learn.microsoft.com/en-us/power-pages/configure/media/visual-studio-code-editor/vscode-file-explorer.png" alt title>
-</figure>
-</div>
-<div class="frame steel dt-sc-one-third">
-<figure>
-<img src="https://www.intelligenthq.com/wp-content/uploads/2020/11/AI.jpg" alt title>
-</figure>
-</div>
-<div class="frame wooden dt-sc-one-third">
-<figure>
-<img src="https://assets-global.website-files.com/61406347b8db463e379e2732/616f2568930a2ea589a71598_Smart-Guides-01.gif" alt title>
-</figure>
-</div>
-<div class="frame wooden dt-sc-one-third">
-<figure>
-<img src="https://discover.therookies.co/content/images/size/w1000/2022/07/affinity-designer-1.jpeg" alt title>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="frame-details">
-<div class="frame-content">
-<div id="frame-all" class="dt-frames">
-<p>At the intersection of creativity and technology, our expertise lies in providing freelance services as both a graphic designer and a web developer. From crafting visually captivating designs that tell compelling stories to developing seamless and innovative websites, we bring a unique blend of artistic flair and technical proficiency to every project. Whether you're seeking eye-catching graphics or a robust online presence, we've got you covered. Let's turn your ideas into stunning visuals and functional, user-friendly websites.</p>
-</div>
-<div id="frame-steel" class="dt-frames hidden">
-<p>At the intersection of creativity and technology, our expertise lies in providing freelance services as both a graphic designer and a web developer. From crafting visually captivating designs that tell compelling stories to developing seamless and innovative websites, we bring a unique blend of artistic flair and technical proficiency to every project. Whether you're seeking eye-catching graphics or a robust online presence, we've got you covered. Let's turn your ideas into stunning visuals and functional, user-friendly websites.</p>
-</div>
-<div id="frame-wooden" class="dt-frames hidden">
-<p>At the intersection of creativity and technology, our expertise lies in providing freelance services as both a graphic designer and a web developer. From crafting visually captivating designs that tell compelling stories to developing seamless and innovative websites, we bring a unique blend of artistic flair and technical proficiency to every project. Whether you're seeking eye-catching graphics or a robust online presence, we've got you covered. Let's turn your ideas into stunning visuals and functional, user-friendly websites.</p>
-</div>
-<div id="frame-plastic" class="dt-frames hidden">
-<p>At the intersection of creativity and technology, our expertise lies in providing freelance services as both a graphic designer and a web developer. From crafting visually captivating designs that tell compelling stories to developing seamless and innovative websites, we bring a unique blend of artistic flair and technical proficiency to every project. Whether you're seeking eye-catching graphics or a robust online presence, we've got you covered. Let's turn your ideas into stunning visuals and functional, user-friendly websites.</p>
-</div>
-<div id="frame-ceramic" class="dt-frames hidden">
-<p>At the intersection of creativity and technology, our expertise lies in providing freelance services as both a graphic designer and a web developer. From crafting visually captivating designs that tell compelling stories to developing seamless and innovative websites, we bring a unique blend of artistic flair and technical proficiency to every project. Whether you're seeking eye-catching graphics or a robust online presence, we've got you covered. Let's turn your ideas into stunning visuals and functional, user-friendly websites.</p>
-</div>
-</div>
-<div class="frame-sorting">
-<a data-filter="*" href="#" class="active-sort type1 dt-sc-button animate" data-animation="fadeIn" data-delay="100">All</a>
-<a data-filter=".steel" href="#" class="type1 dt-sc-button animate" data-animation="fadeIn" data-delay="200">Editing</a>
-<a data-filter=".wooden" href="#" class="type1 dt-sc-button animate" data-animation="fadeIn" data-delay="300">Graphic designing</a>
-<a data-filter=".plastic" href="#" class="type1 dt-sc-button animate" data-animation="fadeIn" data-delay="400">web development</a>
-<a data-filter=".ceramic" href="#" class="type1 dt-sc-button animate" data-animation="fadeIn" data-delay="500">poster creation</a>
-</div>
-</div>
-</div>
-</div>
-<div class="dt-sc-hr-invisible-small"></div>
-<div class="clear"></div>
-<div class="fullwidth-section">
-<div class="container">
-<div class="main-title animate" data-animation="pullDown" data-delay="100">
-<h2 class="aligncenter"> About Me </h2>
-<p> Greetings! I'm Anantha Raman J, a multi-faceted creative professional wearing the hats of a freelance graphic designer, computer engineer, and web developer. Here, you'll dive into my world, where pixels, code, and design converge seamlessly. </p>
-</div>
-<div class="about-section">
-<div class="dt-sc-one-half column first">
-<img src="https://newbornposing.com/wp-content/uploads/2021/03/how-to-retouch-newborn-photos-in-photoshop.jpg" title alt>
-</div>
-<div class="dt-sc-one-half column">
-<h3 class="animate" data-animation="fadeInLeft" data-delay="200"> Who Am I?</h3>
-<p>I'm not just a freelancer; I'm a versatile individual with a flair for graphic design, the problem-solving mindset of a computer engineer, and the coding finesse of a web developer. I thrive on turning ideas into reality, consistently pushing the boundaries of what's possible in each of these domains.</p>
-<h3 class="animate" data-animation="fadeInLeft" data-delay="300">What You Can Expect</h3>
-<p>When you collaborate with me, you're not just hiring a freelancer; you're gaining a partner committed to bringing your vision to life across the diverse spectrum of graphic design, computer engineering, and web development. I embed my work with a deep commitment to quality, creativity, and functionality.</p>
-<h3 class="animate" data-animation="fadeInLeft" data-delay="400">Let's Connect</h3>
-<p>'m always open to new opportunities, collaborations, and conversations across the realms of graphic design, computer engineering, and web development. Whether you're looking to enhance your brand visuals, solve intricate engineering puzzles, or build an impactful online presence, I'm here for it. Let's create something extraordinary together</p>
-<form method="post" class="mailchimp-form dt-sc-three-fourth" name="frmnewsletter" action="php/subscribe.php">
-<p class="input-text">
-<input class="input-field" type="email" name="mc_email" value required />
-<label class="input-label">
-<i class="fa fa-envelope-o icon"></i>
-<span class="input-label-content">Mail</span>
-</label>
-<input type="submit" name="submit" class="submit" value="Subscribe" />
-</p>
-</form>
-<div id="ajax_subscribe_msg"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="dt-sc-hr-invisible-small"></div>
-</section>
-<footer id="footer" class="animate" data-animation="fadeIn" data-delay="100">
-<div class="container">
-<div class="copyright">
-<ul class="footer-links">
-<li><a href="#">Contact us</a></li>
-<li><a href="#">Privacy policy</a></li>
-<li><a href="#">Terms of use</a></li>
-<li><a href="#">Faq</a></li>
-</ul>
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="street still-life">
+                    <img src="images/portfolio-images/img-3.jpg" alt="Mountain Ride">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h4>Mountain Ride</h4>
+                            <p>Street, Landscapes</p>
+                        </div>
+                    </div>
+                </div>
 
-<p>© 2023 <a href="#">gforx studio</a>. All rights reserved.</p>
-</div>
-</div>
-</footer>
-</div>
-</div>
-</div>
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="nature still-life">
+                    <img src="images/portfolio-images/img-4.jpg" alt="River Ride">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h4>River Ride</h4>
+                            <p>Nature, Still Life</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="people still-life">
+                    <img src="images/portfolio-images/img-5.jpg" alt="Ride Hard">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h4>Ride Hard</h4>
+                            <p>People, Still Life</p>
+                        </div>
+                    </div>
+                </div>
 
-<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
-<script src="js/jquery.inview.js" type="text/javascript"></script>
-<script src="js/jquery.viewport.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-<script src="js/jsplugins.js" type="text/javascript"></script>
-<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
-<script src="js/jquery.validate.min.js" type="text/javascript"></script>
-<script src="js/jquery.tipTip.minified.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-<script src="js/controlpanel.js" type="text/javascript"></script>
-<script src="js/custom.js"></script>
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="people still-life">
+                    <img src="images/portfolio-images/img-6.jpg" alt="Black Rider">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h4>Black Rider</h4>
+                            <p>People, Still Life</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="portfolio-item" data-category="people nature street still-life">
+                    <img src="images/portfolio-images/img-7.jpg" alt="Stay single">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h4>Stay single</h4>
+                            <p>People, Nature</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="portfolio-item" data-category="nature people street still-life">
+                    <img src="images/portfolio-images/img-8.jpg" alt="Born to Ride">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h4>Born to Ride</h4>
+                            <p>People, Nature</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="portfolio-item" data-category="street nature people still-life">
+                    <img src="images/portfolio-images/img-9.jpg" alt="Stand Tall">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h4>Stand Tall</h4>
+                            <p>Street, People</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="https://newbornposing.com/wp-content/uploads/2021/03/how-to-retouch-newborn-photos-in-photoshop.jpg" alt="About Gforx Studio">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 0.5rem;">About Us</h2>
+                    <h3 class="gradient-text">Who We Are</h3>
+                    <p>Greetings! I'm Anantha Raman J, leading Gforx Studio. We are a dynamic production house where pixels, code, and design converge seamlessly. We combine the flair of graphic design, the problem-solving mindset of engineering, and the coding finesse of web development.</p>
+                    
+                    <h3 class="gradient-text">What You Can Expect</h3>
+                    <p>When you collaborate with us, you're gaining a dedicated partner committed to bringing your vision to life across a diverse spectrum of media. We embed our work with a deep commitment to quality, creativity, and robust functionality.</p>
+                    
+                    <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">Let's Create Together</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="contact-cta">
+                <h2>Ready to start your next project?</h2>
+                <p>We're always open to new opportunities, collaborations, and conversations across the realms of production, design, and development. Let's create something extraordinary together.</p>
+                <div style="margin-bottom: 2rem;">
+                    <form method="post" action="php/subscribe.php" style="display: flex; justify-content: center; gap: 0.5rem; max-width: 400px; margin: 0 auto;">
+                        <input type="email" name="mc_email" placeholder="Enter your email" required style="padding: 0.8rem 1rem; border-radius: 30px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: white; flex-grow: 1; outline: none;">
+                        <button type="submit" class="btn btn-primary" style="padding: 0.8rem 1.5rem;">Subscribe</button>
+                    </form>
+                </div>
+                <a href="mailto:hello@gforx.studio" class="btn btn-secondary">Contact Us</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i data-feather="github"></i></a>
+                <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Gforx Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth Scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Simple Portfolio Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active class
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter items
+                const filterValue = btn.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    const categories = item.getAttribute('data-category').split(' ');
+                    if (filterValue === 'all' || categories.includes(filterValue)) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(10, 10, 15, 0.95)';
+                navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)';
+            } else {
+                navbar.style.background = 'rgba(10, 10, 15, 0.8)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
